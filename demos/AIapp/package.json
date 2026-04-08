@@ -1,0 +1,39 @@
+{
+  "name": "aiapp-demo",
+  "description": "QCollection Parfums Canva asset browser — lists images from all brand asset folders",
+  "scripts": {
+    "start": "ts-node ./scripts/start.ts",
+    "lint:types": "cd backend && npm run lint:types && cd ../frontend && npm run lint:types && tsc",
+    "generate:db-key": "ts-node ../common/scripts/generate-key.ts --save",
+    "generate:dotenv": "ts-node ../common/scripts/setup-env.ts",
+    "postinstall": "npm run generate:dotenv && npm run generate:db-key"
+  },
+  "engines": {
+    "node": ">=20.14.0"
+  },
+  "engineStrict": true,
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "commonjs",
+  "dependencies": {
+    "cookie-parser": "1.4.7",
+    "jose": "5.10.0"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "1.4.9",
+    "@types/node": "24.12.0",
+    "@types/nodemon": "1.19.6",
+    "@types/yargs": "17.0.33",
+    "chalk": "4.1.2",
+    "cli-table3": "0.6.5",
+    "envfile": "7.1.0",
+    "nodemon": "3.0.1",
+    "prettier": "3.6.2",
+    "ts-node": "10.9.2",
+    "typescript": "5.9.2",
+    "webpack-cli": "6.0.1",
+    "webpack-dev-server": "5.2.2",
+    "yargs": "17.7.2"
+  }
+}

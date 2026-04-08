@@ -1,0 +1,38 @@
+{
+  "name": "aiapp-demo-frontend",
+  "description": "Web app for the AIapp QCollection asset browser",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config ./webpack.config.ts --mode production",
+    "lint:types": "tsc"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@canva/connect-api-ts": "file:../../../client/ts",
+    "@emotion/react": "11.14.0",
+    "@emotion/styled": "11.14.1",
+    "@fontsource/roboto": "5.2.6",
+    "@mui/icons-material": "5.18.0",
+    "@mui/material": "5.18.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-router-dom": "7.12.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.1",
+    "@types/webpack": "5.28.5",
+    "@types/node": "24.12.0",
+    "css-loader": "7.1.2",
+    "cssnano": "7.1.1",
+    "postcss-loader": "8.1.1",
+    "prettier": "3.6.2",
+    "style-loader": "4.0.0",
+    "terser-webpack-plugin": "5.4.0",
+    "ts-loader": "9.5.4",
+    "typescript": "5.9.2",
+    "webpack-dev-server": "5.2.2"
+  }
+}

@@ -16,6 +16,9 @@
     "demos/realty/frontend",
     "demos/realty/backend",
     "demos/realty/shared-models",
+    "demos/AIapp",
+    "demos/AIapp/frontend",
+    "demos/AIapp/backend",
     "client"
   ],
   "engines": {
@@ -25,8 +28,12 @@
   "scripts": {
     "generate": "cd client && npm run generate",
     "demo:ecommerce": "cd demos/ecommerce_shop && npm start",
+    "demo:aiapp": "cd demos/AIapp && npm start",
     "demo:playground": "cd demos/playground && npm start",
     "demo:realty": "cd demos/realty && npm start",
     "lint:types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.82.0"
   }
 }

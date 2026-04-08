@@ -47,6 +47,7 @@ export function getAuthorizationUrl(
     "design:content:read",
     "design:content:write",
     "design:meta:read",
+    "folder:read",
     "profile:read",
   ];
   const scopeString = scopes.join(" ");
